@@ -1,0 +1,57 @@
+*{
+	font-family: Fjalla One;
+  margin: 0;
+	border: 0;
+	padding: 0;
+	color: rgb(125, 17, 17);
+}
+
+html{
+  background-color: #b10f0f;
+}
+
+
+
+
+th{
+	background-color: black;
+	color: #ffe221;
+}
+
+.headin{
+	
+	color: #ffe221;
+	
+}
+
+
+
+.wpos td{
+	color: #77ff21;
+}
+
+
+
+.pos td{
+	color: #ff7b21;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: #77ff21;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
+}

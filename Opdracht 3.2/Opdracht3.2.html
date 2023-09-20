@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tui website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>Welkom naar TUI Website Voor bookings.</h1>
+    <br>
+    
+    
+    
+    
+    
+    <br><form action="action_page.php" method="GET">
+
+        <div>
+
+        <label for="fname">Voornaam</label>
+        <input type="text" id="fname" name="fname" placeholder="Vul u voornaam in" required>
+    </div>
+    <br>
+
+    </br>
+    <div>
+
+        <label for="fname">Achternaam</label>
+        <input type="text" id="fname" name="fname" placeholder="Vul u achternaam in">
+
+    </div>
+
+    <br>
+
+</br>
+<div>
+    <label for="Geslacht">Geslacht</label>
+    <select name="geslacht" id="Geslacht">
+        <option value="Man">Man</option>
+        <option value="Vrouw">Vrouw</option>
+        <option value="Anders">Anders</option>
+    </select>
+
+
+
+</div>
+
+<br>
+
+</br>
+
+<div>
+
+    <td>adres</td>
+
+    <textarea type rows="2" cols="10" placeholder="huisnummer,straat,stad"></textarea>
+
+  </div>
+
+  <br>
+
+  <div>
+
+    <td>postcode</td>
+
+    <textarea type rows="2" cols="10" placeholder="postcode"></textarea>
+
+  </div>
+  
+  
+  <br>
+  
+  <div>
+
+    <td>Land</td>
+
+    <textarea type rows="2" cols="10" placeholder="Land"></textarea>
+
+  </div>
+
+<br>
+
+</br>
+<div>
+   
+    <form>
+        <label for="fname">BSN-nummer: </label>
+        <input type="text" id="fname" name="fname"maxLength="9" />
+    </form>
+
+</div>
+
+<br>
+
+</br>
+
+<div>
+    <label for="Vakantielanden">Vakantielanden</label>
+    <select name="Vakantielanden" id="Vakantielanden">
+        <option value="Italy">Italy</option>
+        <option value="Duitsland">Duitsland</option>
+        <option value="Espanje">Espanje</option>
+    </select>
+
+
+
+</div>
+
+<br>
+
+
+</br>
+
+<div>
+    <h4>Datum van vertrek :</h4> 
+    
+    <input type="date" id="inputdate" name="inputdate">
+ 
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+</html>
+
+</div>
+
+<br>
+
+
+
+
+</br>
+
+<div>
+
+    <label for="start">Datum van terugkomst:</label>
+
+ 
+
+<input type="date" id="start" name="trip-start" value="" min="2023-09-14" max="2024-09-14" />
+    
+</div>
+<br>
+
+
+</br>
+
+<br>
+
+
+<div>
+   
+    <label for="Aantal reisgenoten (max 4 mensen)">Aantal reisgenoten (max 4 mensen)</label>
+    <select name="Aantal reisgenoten (max 4 mensen)" id="Aantal reisgenoten (max 4 mensen)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+</div>
+
+<br>
+
+</br>
+
+<div>
+    <form action="/action_page.php" method="get"> 
+    <button type="submit" value="Boek nu"> Boek nu </button>
+
+</div>
+
+<br>
+
+
+</br>
+
+<div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Vul u email in" >
+
+</div>
+<br>
+
+<div>
+
+    <label for="pass">Wachtwoord</label>
+    <input type="password" id="pass" name="pass" placeholder="Vul u Wachtwoord in" >
+
+</div>
+
+
+
+
+    </form>
+</body>
+</html>
