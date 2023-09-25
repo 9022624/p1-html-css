@@ -8,6 +8,10 @@ html {
 }
 body {
   font-family: "Goldman", cursive;
+  background-image: url(img/background.jpeg);
+  background-size: 100%;
+  background-color: black;
+
 }
 
 nav {
@@ -37,3 +41,20 @@ nav a {
 nav img {
   width: 5vw;
 }
+h1{color: white;}
+
+form
+{
+
+color: white;
+font-family: 'Goldman', cursive;
+font-size: 20px;
+
+}
+
+section{size: 100%;}
+
+footer{  background: #00a8c7;}
+
+#Getin{font-weight: bold;}
+
